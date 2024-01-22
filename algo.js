@@ -1,0 +1,29 @@
+console.log("Javascript algorithm");
+
+//Q.1 - Calculate the sum of natural numbers
+function sumOfNaturalNum(num) {
+  let sum = 0;
+  for (let i = 1; i <= num; i++) {
+    sum += i; //time and space complexity is o(n) - linear
+  }
+  return sum;
+}
+
+console.log(sumOfNaturalNum(4));
+
+// different way to calculate the natual num sum
+function optimizedSumOfNaturalNum(num) {
+  return num + (num + num / 2); // time and space compexity is o(1) - constant
+}
+console.log(optimizedSumOfNaturalNum(4));
+
+// Q -3 - fibonnaci series -
+function fibonnaci(num) {
+  let fib = [0, 1];
+  for (let i = 2; i < num; i++) {
+    fib[i] = fib[i - 1] + fib[i - 2];
+  }
+  return fib;
+}
+
+console.log(fibonnaci(5));
