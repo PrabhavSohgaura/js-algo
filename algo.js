@@ -28,3 +28,22 @@ function fibonnaci(num) {
 //time complexity = o(n)
 //space complexity = o(1)
 console.log(fibonnaci(5));
+
+//Q.4- Find the factorial of a number
+function factorial(num) {
+  if (num === 0) return 1;
+  return num * factorial(num - 1); //use of recursion
+}
+
+console.log(factorial(5));
+
+//different approach
+function fact(num) {
+  // factorial of 0 or 1 is 1
+  let result = 1;
+  for (let i = 2; i <= num; i++) {
+    result = result * i;
+  }
+  return result;
+}
+console.log(fact(4));
