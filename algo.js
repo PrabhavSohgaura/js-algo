@@ -19,11 +19,12 @@ console.log(optimizedSumOfNaturalNum(4));
 
 // Q -3 - fibonnaci series -
 function fibonnaci(num) {
-  let fib = [0, 1];
+  let fib = [0, 1]; //n=1
   for (let i = 2; i < num; i++) {
-    fib[i] = fib[i - 1] + fib[i - 2];
+    fib[i] = fib[i - 1] + fib[i - 2]; //n = num
   }
-  return fib;
+  return fib; //n=1
 }
-
+//time complexity = o(n)
+//space complexity = o(1)
 console.log(fibonnaci(5));
